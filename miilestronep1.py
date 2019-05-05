@@ -99,10 +99,10 @@ while True:
         gameon = False 
     
     while gameon == True: 
-        if turn == 'Player 1': 
+        if turn == 'Player 1'.lower(): 
              
             display_board(theboard)
-            position = player_choice(theboard)
+            position = int(player_choice(theboard))
              
             place_marker(theboard, player1_marker, position) 
              
